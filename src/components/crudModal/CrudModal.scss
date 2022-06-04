@@ -1,0 +1,49 @@
+.ce-crudModal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+
+    .ce-headerLabel {
+        font-size: 18px;
+        margin: 0.15rem;
+        text-align: center;
+        color: #333;
+    }
+
+    .ce-tabPanel {
+        padding: 0;
+        .ce-tabPanelContainer{
+            display: flex;
+            flex-direction: column;
+            padding: 0.25rem;
+            height: 360px;
+            overflow-x: hidden;
+            overflow-y: overlay;
+
+            .ce-inputText {
+                margin: 0.50rem;
+            }
+        }
+        
+    }
+
+    .ce-buttonGroup {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.50rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .ce-saveButton,
+        .ce-cancelButton {
+            margin: 0.25rem;
+        }
+
+        .ce-cancelButton {
+            border-color: red;
+            color: red;
+        }
+    }
+}
